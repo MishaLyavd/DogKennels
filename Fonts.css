@@ -1,0 +1,54 @@
+@font-face {
+	font-family: "MyriadPro-BoldCond";
+	src: url("Fonts/myriadpro-boldcond.eot") format("eot"),
+		url("Fonts/myriadpro-boldcond.svg") format("svg"),
+		url("Fonts/myriadpro-boldcond.ttf") format("ttf"),
+		url("Fonts/myriadpro-boldcond.woff") format("woff"),
+		url("Fonts/myriadpro-boldcond.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "MyriadPro-Semibold";
+	src: url("Fonts/myriadpro-semibold.eot") format("eot"),
+		url("Fonts/myriadpro-semibold.svg") format("svg"),
+		url("Fonts/myriadpro-semibold.ttf") format("ttf"),
+		url("Fonts/myriadpro-semibold.woff") format("woff"),
+		url("Fonts/myriadpro-semibold.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "DanielBlack";
+	src: url("Fonts/danielblack.eot") format("eot"),
+		url("Fonts/danielblack.svg") format("svg"),
+		url("Fonts/danielblack.ttf") format("ttf"),
+		url("Fonts/danielblack.woff") format("woff"),
+		url("Fonts/danielblack.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Standard0755";
+	src: url("Fonts/standard0755.eot") format("eot"),
+		url("Fonts/standard0755.svg") format("svg"),
+		url("Fonts/standard0755.ttf") format("ttf"),
+		url("Fonts/standard0755.woff") format("woff"),
+		url("Fonts/standard0755.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Standard0765";
+	src: url("Fonts/standard0765.eot") format("eot"),
+		url("Fonts/standard0765.svg") format("svg"),
+		url("Fonts/standard0765.ttf") format("ttf"),
+		url("Fonts/standard0765.woff") format("woff"),
+		url("Fonts/standard0765.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}

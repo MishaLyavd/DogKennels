@@ -1,0 +1,364 @@
+body {
+	text-transform: uppercase;
+	font-family: "Standard0755";
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-hor,
+.flex-ver {
+	display: flex;
+}
+
+.flex-ver {
+	flex-direction: column;
+}
+
+img {
+	user-select: none;
+}
+
+header {
+	min-height: 83px;
+}
+
+header::before {
+	content: "";
+	display: block;
+	background-color: #F1F1F1;
+	height: 36px;
+}
+
+header::after {
+	content: "";
+	display: block;
+	background-color: #F6F6F6;
+	height: 10px;
+	margin-top: 2px;
+}
+
+.header-background {
+	background-color: #F6F6F6;
+	height: 35px;
+	position: relative;
+}
+
+.header-wrapper {
+	width: 625px;
+	height: 47px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.header-wrapper .head-logo {
+	position: absolute;
+	left: -30px;
+}
+
+.header-wrapper .head-dog {
+	position: absolute;
+	right: -3px;
+	top: -21px;
+}
+
+.head-menu {
+	width: 314px;
+	height: 47px;
+	font-size: 0;
+	text-align: left;
+	white-space: nowrap;
+}
+
+.head-menu .list-item {
+	display: inline-block;
+	width: 52px;
+	height: 47px;
+	list-style-type: none;
+	margin-right: 10px;
+	font-size: 14px;
+	font-family: "MyriadPro-BoldCond";
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+	line-height: 35px;
+	vertical-align: middle;
+	z-index: 2;
+	user-select: none;
+}
+
+.head-menu .list-item::after {
+	content: "";
+	width: 52px;
+	height: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-out;
+}
+
+.head-menu .list-item:nth-child(1)::after {
+	background-color: #14AEF4;
+}
+
+.head-menu .list-item:nth-child(2)::after {
+	background-color: #FEBF24;
+}
+
+.head-menu .list-item:nth-child(3)::after {
+	background-color: #89C734;
+}
+
+.head-menu .list-item:nth-child(4)::after {
+	background-color: #EF141C;
+}
+
+.head-menu .list-item:nth-child(5)::after {
+	background-color: #832878;
+}
+
+.head-menu .list-item:hover::after {
+	opacity: 0.5;
+	width: 62px;
+	transform: translateX(-5px);
+}
+
+main {
+	flex-grow: 1;
+}
+
+.main-wrapper {
+	padding-top: 205px;
+	width: 625px;
+	margin: 0 auto;
+	min-height: 500px;
+	position: relative;
+}
+
+.block-green {
+	min-height: 150px;
+	background-color: #A8DA21;
+	border-radius: 50px;
+	box-shadow: 0 10px 0 0 rgba(255, 255, 255, 0.5);
+	z-index: 1;
+	color: #000000;
+}
+
+.block-blue {
+	margin-top: 15px;
+	min-height: 320px;
+	background-color: #41A9CD;
+	border-radius: 0 0 50px 50px;
+	color: #ffffff;
+}
+
+.block-green,
+.block-blue {
+	font-size: 8px;
+	position: relative;
+	opacity: 0.9;
+	width: 100%;
+	line-height: 15px;
+}
+
+.block-blue::before {
+	content: "";
+	height: 50px;
+	width: 100%;
+	background-color: #41A9CD;
+	border-radius: 50px 50px 0 0;
+	position: absolute;
+	top: -50px;
+}
+
+.block-green .half-1 {
+	margin: 20px 10px 0 20px;
+	width: calc(50% - 30px);
+}
+
+.block-green .half-2 {
+	margin: 20px 50px 0 20px;
+	width: calc(50% - 70px);
+}
+
+.block-green .half-item {
+	margin-right: 15px;
+}
+
+.block-green .half-item:last-child,
+.block-blue .half-item_info:last-child {
+	margin-right: 0;
+}
+
+.block-green .half-item_head {
+	text-transform: none;
+	font-size: 24px;
+	font-family: "DanielBlack";
+}
+
+.block-green .half-item_head,
+.block-green .half-item_main {
+	margin-bottom: 10px;
+}
+
+.block-green .half-item_main:first-line {
+	font-family: "Standard0765";
+}
+
+.block-green .half-item_foot,
+.block-blue .half-item_foot {
+	font-size: 14px;
+	font-family: "MyriadPro-BoldCond";
+    position: relative;
+    cursor: pointer;
+	padding: 10px 22px;
+	transition-duration: 1s;
+	transform-origin: left 50%;
+	align-self: flex-start;
+}
+
+.block-green .half-item_head,
+.block-green .half-item_foot,
+.block-blue .half-item_foot {
+	color: #ffffff;
+    user-select: none;
+}
+
+.block-green .half-item_foot::after,
+.block-blue .half-item_foot::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 19px;
+    background-image: url("Images/paw.png");
+    top: 7px;
+    left: 0;
+}
+
+.block-green .half-item_foot:hover,
+.block-blue .half-item_foot:hover {
+	transform: scale(1.2);
+	filter: invert(1);
+}
+
+.block-green .item-image {
+	position: relative;
+}
+
+.block-green .half-1 .item-image::before,
+.block-green .half-2 .item-image::before {
+	content: url("Images/shadow.png");
+	position: absolute;
+	bottom: -22px;
+}
+
+.block-green .half-1 .item-image::before {
+	left: -35px;
+}
+
+.block-green .half-2 .item-image::before {
+	left: -50px;
+}
+
+.block-green .image-dog {
+	position: relative;
+}
+
+.block-blue .half-1 {
+	margin: 20px 20px 0 35px;
+	width: calc(50% - 55px);
+}
+
+.block-blue .half-2 {
+	margin: 20px 35px 0 20px;
+	width: calc(50% - 55px);
+}
+
+.block-blue .half-item {
+	margin-bottom: 10px;
+	align-items: center;
+}
+
+.block-blue .half-item:first-child {
+	margin-bottom: 15px;
+}
+
+.block-blue .half-item_h1,
+.block-blue .half-item_h2 {
+    font-family: "MyriadPro-Semibold";
+	font-weight: bold;
+	user-select: none;
+}
+
+.block-blue .half-item_h1 {
+	font-size: 24px;
+}
+
+.block-blue .half-item_h2 {
+	color: #000000;
+	font-size: 10px;
+}
+
+.block-blue .half-item_info {
+	line-height: 15px;
+	margin-right: 10px;
+}
+
+.block-blue .half-item_info:first-line,
+.block-blue .half-item_h3 {
+	color: #000000;
+	font-family: "Standard0765";
+}
+
+.block-blue .half-item_list {
+	list-style-type: none;
+	line-height: 18px;
+	padding-left: 24px;
+}
+
+.block-blue .half-item_list-item {
+	position: relative;
+}
+
+.block-blue .half-item_list-item::after {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: -18px;
+	top: 4px;
+	background-image: url("Images/arrow.png");
+}
+
+.block-blue .half-item_h3,
+.block-blue .half-item_text {
+	margin: 10px 0 0 10px;
+}
+
+.block-blue .half-item_foot {
+	align-self: flex-end;
+}
+
+footer {
+	min-height: 70px;
+	flex-shrink: 0;
+}
+
+footer .copyright {
+	text-transform: none;
+	text-align: center;
+	vertical-align: middle;
+	width: 625px;
+	height: 52px;
+	line-height: 52px;
+	margin: 0 auto;
+	font-size: 8px;
+	color: #90948D;
+}
+
+footer::after {
+	content: "";
+	display: block;
+	height: 18px;
+	background-color: #F6F6F6;
+}
